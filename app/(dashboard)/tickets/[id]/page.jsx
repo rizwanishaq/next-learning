@@ -2,6 +2,16 @@ import { notFound } from "next/navigation";
 
 export const dynamicParams = true;
 
+export async function generateMetadata({ params }) {
+  const res = await fetch(`http://localhost:4000/tickets/${params.id}`);
+
+  const ticket = await res.json();
+
+  return {
+    title: `RiIsBiTech Helpdesk | ${ticket.title}`,
+  };
+}
+
 export async function generateStaticParams() {
   const res = await fetch("http://localhost:4000/tickets");
   const tickets = await res.json();

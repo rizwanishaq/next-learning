@@ -2,6 +2,10 @@ import { Suspense } from "react";
 import TicketList from "./TicketList";
 import Loading from "@app/loading";
 
+export const metadata = {
+  title: "RiIsBi Helpdesk | Tickets",
+};
+
 function TicketsPage() {
   return (
     <main>

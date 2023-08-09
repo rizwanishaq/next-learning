@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { resolve } from "styled-jsx/css";
 
 async function getTickets() {
   // inserting delay
