@@ -5,7 +5,7 @@
 GET http://localhost:3000/api/tickets
 
 ### Get languages
-GET http://localhost:3000/api/tickets/1
+GET http://localhost:3000/api/tickets/5uuyrsh
 
 ### Get languages
 GET https://devavatar.utopia.ai/api/tts/voices/en-US
